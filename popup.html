@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html,
+    body {
+      width: auto;
+      margin: 0px;
+      padding: 0px;
+      height: 20px;
+    }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Tweet with YouTube SS</title>
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <script type="text/javascript" src="js/lib/oAuth.js"></script>
+  <script type="text/javascript" src="js/lib/sha1.js"></script>
+  <script type="text/javascript" src="js/lib/twitter.js"></script>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+
+  <div class="toast" id="tweet-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      ツイートを送信しました。
+    </div>
+  </div>
+  <div id="user-info" class="parent">
+  </div>
+
+  <div id="content">
+    <div class="before-login">
+      スクリーンショットを投稿するにはTwitterへのログインが必要です。
+      <button id="authenticate" class="btn btn-primary">Twitterにログイン</button>
+    </div>
+  </div>
+  <div id="screenshot-area">
+  </div>
+
+  <script type="text/javascript" src="js/popup.js"></script>
+</body>
+
+</html>
