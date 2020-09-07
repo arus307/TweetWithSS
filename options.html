@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TweetWithStreamSS 設定</title>
+    <style>
+        body {
+            margin: 25px;
+            font-size: 14px;
+        }
+        
+        code {
+            background: #ddd;
+            padding: 5px 10px;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+        
+        h2 {
+            margin: 25px 0 10px;
+        }
+        
+        h3 {
+            margin: 25px 0 5px;
+        }
+        
+        label {
+            display: block;
+            padding: 10px;
+        }
+        
+        label:hover {
+            background: #f7f7f7;
+        }
+        
+        #PlaybackSpeedHelp {
+            margin: 0 0 0 45px;
+        }
+        
+        #PlaybackSpeedHelp p {
+            display: inline-block;
+            margin: 0 10px 5px 0;
+            min-width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tweet with Stream Screenshot</h1>
+
+    <h2>設定</h2>
+
+    <h3>スクリーンショットの保存方法</h3>
+    <p>
+        <label><input type="radio" name="ScreenshotSaveMethodCheck" value="0" id="FileSave">PCにファイルとして保存する</label>
+        <label><input type="radio" name="ScreenshotSaveMethodCheck" value="1" id="TweetOnly">ツイートへの添付のみ(PC内には保存しない)</label>
+    </p>
+
+    <script src="js/options.js"></script>
+</body>
+
+</html>
