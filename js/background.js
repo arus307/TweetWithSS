@@ -8,15 +8,13 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function (data) {
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
   if (request.session) {
-    sendResponse({});
 
     var params = Twitter.deparam(request.session);
     // Get access tokens again.
     Twitter.api('oauth/access_token', 'POST', params, function (res) {
       Twitter.setOAuthTokens(Twitter.deparam(res), function () {
-        Twitter.isLoggedIn(function(){
-          Twitter.setUserData();
-        })
+        Twitter.setUserData();
+        sendResponse({});
       });
     });
   }
