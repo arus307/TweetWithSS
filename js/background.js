@@ -1,7 +1,6 @@
 chrome.webNavigation.onHistoryStateUpdated.addListener(function (data) {
   chrome.tabs.get(data.tabId, function (tab) {
-    console.log("executeScript();");
-    chrome.tabs.executeScript(data.tabId, { code: ' console.log("test"); if (typeof AddScreenshotButton !== "undefined") { AddScreenshotButton(); }', runAt: 'document_start' });
+    chrome.tabs.executeScript(data.tabId, { code: 'if (typeof AddScreenshotButton !== "undefined") { AddScreenshotButton(); }', runAt: 'document_start' });
   });
 }, { url: [{ hostSuffix: '.youtube.com' }] });
 
