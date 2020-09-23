@@ -1,8 +1,8 @@
 (function() {
   var API_URL = 'https://api.twitter.com/';
   var UPLOAD_API_URL = 'https://upload.twitter.com/';
-  var consumer_key = 'XXXXXXXXXXX';
-  var consumer_secret = 'XXXXXXXXXXX';
+  var consumer_key = 'API_CONSUMER_KEY';
+  var consumer_secret = 'API_CONSUMER_SECRET';
   var Twitter = {
     oauth_token: null,
     oauth_token_secret: '',

@@ -14,7 +14,7 @@
     "default_title": "TweetWithSS",
     "default_popup": "popup.html"
   },
-  "web_accessible_resources": [ "popup.html","icons/icon48.png"],
+  "web_accessible_resources": [ "popup.html","icons/icon.svg"],
   "background": {
     "scripts": [
       "js/lib/jquery.min.js",

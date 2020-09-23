@@ -20,7 +20,7 @@ chrome.storage.sync.get(['ScreenshotSaveMethod'], function (result) {
 let screenshotButton = document.createElement("button");
 screenshotButton.className = "screenshotButton ytp-button";
 screenshotButton.style.width = "auto";
-screenshotButton.innerHTML = '<img src="' + chrome.extension.getURL("icons/icon48.png") + '" style="width:25px;height:25px;transform:translate(0,25%)">'
+screenshotButton.innerHTML = '<img src="' + chrome.extension.getURL("icons/icon.svg") + '" style="width:25px;height:25px;transform:translate(0,25%)">'
 screenshotButton.style.cssFloat = "left";
 screenshotButton.onclick = CaptureScreenshot;
 
@@ -60,7 +60,6 @@ function CaptureScreenshot() {
     }
 
     let dataUrl = canvas.toDataURL();
-    //TODO storageに保存
     chrome.storage.local.set({ 'media_data_url': dataUrl }, function () {
         window.open(chrome.extension.getURL('popup.html'), null,
             'width=' + windowWidth + ',' +

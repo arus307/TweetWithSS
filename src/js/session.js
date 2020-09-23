@@ -1,4 +1,3 @@
-
 /**
  * Get and send oauth tokens from query string.
  */

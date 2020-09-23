@@ -20,14 +20,23 @@
   <script type="text/javascript" src="js/lib/oAuth.js"></script>
   <script type="text/javascript" src="js/lib/sha1.js"></script>
   <script type="text/javascript" src="js/lib/twitter.js"></script>
+
+  <script type="text/javascript" src="js/lib/twitter-text.js"></script>
+
   <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
 
-  <div class="toast" id="tweet-toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast toast-success" id="tweet-toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-body">
       ツイートを送信しました。
+    </div>
+  </div>
+
+  <div class="toast toast-danger" id="tweet-invalid-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      ツイート文字数が上限を超えています。
     </div>
   </div>
   <div id="user-info" class="parent">

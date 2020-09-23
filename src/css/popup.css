@@ -8,13 +8,21 @@ body{
 .toast {
     z-index: -9999;
     white-space: nowrap;
-    background-color: aquamarine;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
+}
+
+.toast-success{
+    background-color: aquamarine;
+}
+
+.toast-danger{
+    color: white;
+    background-color: #ff26e2;
 }
 
 .toast-showing {
@@ -24,7 +32,6 @@ body{
 .btn{
     min-width: 90px;
 }
-
 
 .tweet-text {
     width: 100%;
@@ -83,4 +90,18 @@ body{
     width: 100%;
     max-width: 1000px;
     border: 3px solid darkcyan;
+}
+
+.text-length{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+}
+
+.valid{
+
+}
+
+.invalid{
+    color:red;
 }
