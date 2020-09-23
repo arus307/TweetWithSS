@@ -17,6 +17,7 @@
   "web_accessible_resources": [ "popup.html","icons/icon.svg"],
   "background": {
     "scripts": [
+      "js/key.js",
       "js/lib/jquery.min.js",
       "js/lib/oAuth.js",
       "js/lib/sha1.js",
