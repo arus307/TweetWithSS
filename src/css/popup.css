@@ -98,10 +98,28 @@ body{
     transform: translate(0,-50%);
 }
 
-.valid{
-
-}
-
 .invalid{
     color:red;
+}
+
+.icon-wrench{
+    width: 20px;
+    height: 20px;
+
+    transform: translate(0px, -2px);
+}
+
+.option-btn{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translate(0, -50%);
+    padding: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.option-btn:hover{
+    border-radius: 30%;
+    background-color:#e2e2e2;
 }

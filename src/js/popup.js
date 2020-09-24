@@ -154,6 +154,8 @@ function setUserData() {
             userdata += '<br> <span class="text-muted user-screen-name">@' + items.user_screen_name + '</span>';
         }
 
+        userdata += '<a class="option-btn" href="'+chrome.extension.getURL("options.html")+'"  target="_blank" rel="noopener noreferrer"><img class="icon-wrench" src="' + chrome.extension.getURL("icons/wrench.svg")+'" ></a>'
+
         userdata += '<button id="logout" class="btn btn-sm btn-danger">ログアウト</button>';
 
         document.getElementById('user-info').innerHTML = userdata;
