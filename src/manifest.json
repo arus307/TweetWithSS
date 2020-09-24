@@ -1,6 +1,6 @@
 {
   "name": "TweetWithSS",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "YouTubeにスクリーンショットをツイッターに投稿するためのボタンを追加します。",
   "homepage_url": "https://arus.me",
